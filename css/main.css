@@ -1,0 +1,282 @@
+:root {
+    --lemon: #FFD700;
+    --accent: #FF6F61;
+    --dark: #001F3F;
+    --light: #F0F0F0;
+    --main: #008080;
+
+}
+
+/* General Styles */
+body {
+    font-family: monospace;
+    margin: 0;
+    padding: 0;
+    color: var(--dark);
+    background-color: var(--light);
+    font-size: 16px;
+}
+
+.container {
+    width: 80%;
+    margin: 3rem auto;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.button {
+    background-color: var(--accent);
+    color: var(--light);
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 1rem 0;
+    width: fit-content;
+}
+
+.button:hover {
+    background-color: var(--lemon);
+    color: var(--dark);
+}
+
+/* Header */
+header {
+    background-color: var(--main);
+    color: var(--light);
+    padding: 1em 0;
+
+}
+
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 1rem;
+    width: 90%;
+}
+
+header .logo img {
+    height: 50px;
+    width: 50px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: var(--light);
+    font-size: 1.1em;
+}
+
+nav ul li a:hover {
+    color: var(--lemon);
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.9);
+
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.carat {
+    animation: pulse 1.5s linear 2s infinite;
+
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, var(--accent), var(--main));
+    color: var(--light);
+    text-align: center;
+    display: grid;
+    height: calc(100vh - 50px);
+    display: grid;
+}
+
+.hero-content {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+}
+
+.hero-content h1 {
+    font-size: 2.5em;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    background-color: transparent;
+}
+
+
+/* Projects Section */
+.projects h1 {
+    text-align: center;
+    margin: 1rem;
+}
+.project-cards {
+    display: grid;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 5rem;
+    /* width: 80%; */
+}
+
+.project-card {
+    background: var(--light);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+
+}
+.right {
+    flex-direction: row-reverse;
+}
+.project-card .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    background-color: #001f3fed;
+    color: var(--light);
+    height: 250px;
+    padding: 1rem;
+    width: 400px;
+    box-shadow:  0 2px 4px var(--accent);
+
+}
+
+.project-card img {
+    height: 400px;
+    width: 60%;
+    object-fit: cover;
+    object-position: top;
+    border: 1px var(--main) solid;
+    border-radius: 20px;
+
+}
+
+.project-card h2 {
+    color: var(--main);
+    font-size: 3rem;
+}
+
+.project-card p {
+    color: var(--light);
+}
+.technologies {
+    display: flex;
+
+}
+.technology{
+    background-color: var(--lemon);
+    color: var(--dark);
+    margin: 5px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+
+/* About Section */
+.about {
+    padding: 2em 1em;
+    align-items: center;
+    gap: 2em;
+}
+.about .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.profile-pic {
+    margin: 2rem;
+    border-radius: 20%;
+    max-width: 150px;
+    max-height: 250px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.about-text h1 {
+    color: var(--main);
+}
+
+.timeline {
+
+    margin-top: 2em;
+}
+
+.timeline-item {
+    background: var(--light);
+    border-left: 5px solid var(--main);
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+/* Contact Section */
+.contact {
+    padding: 2em 1em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+form input,
+form textarea {
+    padding: 0.5em;
+    border: 1px solid var(--main);
+    border-radius: 5px;
+}
+
+
+form button:hover {
+    background-color: var(--accent);
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark);
+    color: var(--light);
+    text-align: center;
+    padding: 1em 0;
+}
+
+footer  a img {
+    width: 50px;
+    height: 50px;
+    object-fit: scale-down;
+    margin: 1rem;
+}
