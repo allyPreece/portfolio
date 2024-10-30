@@ -1,0 +1,74 @@
+@import './main.css';
+
+.doodle {
+  margin: 2rem;
+  height: 20rem;
+}
+
+/* Hero Section */
+.hero {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(-135deg, var(--main), var(--accent), var(--accent));
+  /* Gradient background */
+  color: var(--light);
+  /* Text color */
+  text-align: center;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+
+
+.hero-content p {
+  margin: 1rem;
+}
+
+
+
+/* Contact Section */
+.contact {
+  padding: 2rem 1rem;
+}
+
+@media only screen and (min-width: 720px) and (max-width: 824px) {
+
+  /* Styles for tablet screens */
+  .hero {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .doodle{
+    margin: 0;
+  }
+  .hero-content{
+    padding: 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 719px) {
+
+  /* Styles for phone screens */
+  .hero {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .doodle{
+    height: 15rem;
+    margin: 0;
+  }
+  .hero-content{
+    padding: 0;
+  }
+
+
+}
