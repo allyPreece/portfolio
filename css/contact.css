@@ -21,7 +21,7 @@
 .contactIcons img {
   width: 5rem;
   margin-bottom: .25rem;
-  color: var(--dark);
+  color: var(--primary);
 }
 
 .method {
@@ -35,7 +35,7 @@
 .method label {
   width: 100px;
   margin: 0 1rem;
-  color: var(--dark);
+  color: var(--primary);
 }
 
 a:hover {
