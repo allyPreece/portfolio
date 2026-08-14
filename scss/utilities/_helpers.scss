@@ -1,0 +1,14 @@
+.glow-container {
+  --mouse-x: 50%;
+  --mouse-y: 50%;
+
+
+
+  position: relative;
+  background-color: $secondary;
+  background-image: radial-gradient(400px circle at var(--mouse-x) var(--mouse-y),
+      $accent 0.5%,
+      transparent 200%);
+  overflow: hidden;
+  @include transition(background 0.2s ease-out);
+}

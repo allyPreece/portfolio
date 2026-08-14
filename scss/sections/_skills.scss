@@ -1,0 +1,50 @@
+.skills {
+  background-color: $accent;
+  color: $secondary;
+
+  h2 {
+    font-family: 'Young Serif';
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+
+    .skill-category {
+      @include flex-column;
+      padding: 1rem;
+      background-color: color-mix(in srgb, $background 30%, transparent);
+      border-radius: 10px;
+      @include transition(transform 0.3s ease, background-color 0.3s ease);
+
+      &:hover {
+        transform: translateY(-5px);
+        background-color: color-mix(in srgb, $background 50%, transparent);
+      }
+
+      h3 {
+        color: $background;
+        font-size: 1.3rem;
+      }
+
+      ul {
+        list-style: none;
+
+        li {
+          padding: 0.5rem 0;
+          font-size: 0.95rem;
+
+          &:before {
+            content: "▸ ";
+            color: $background;
+            margin-right: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}

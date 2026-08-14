@@ -1,0 +1,30 @@
+header {
+  z-index: 1000;
+  width: 100%;
+  background-color: $primary;
+  color: $accent;
+}
+
+nav {
+  ul {
+    list-style: none;
+
+    li {
+      display: inline;
+      margin: 0 1rem;
+
+      a {
+        color: $accent;
+        @include transition(0.3s ease);
+
+        &:hover {
+          color: $background;
+        }
+      }
+    }
+  }
+}
+
+.logo {
+  margin: 0 1rem;
+}

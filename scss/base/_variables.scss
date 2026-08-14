@@ -1,0 +1,18 @@
+$primary: #2d3142;
+$background: #f7ebe0;
+$secondary: #4f5d75;
+$accent: #b46650;
+$supportingColour: #a7a7a7;
+
+/* Breakpoints */
+$mobile: 719px;
+$tablet-min: 720px;
+$tablet-max: 824px;
+$small-screen: 767px;
+
+/* Glow */
+$mouse-x: 50%;
+$mouse-y: 50%;
+$glow: radial-gradient(400px circle at $mouse-x $mouse-y,
+        $accent 0.5%,
+        transparent 200%);

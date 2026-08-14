@@ -1,0 +1,41 @@
+.about {
+  background: $primary;
+  color: $background;
+  border-radius: 5px;
+  border: $secondary 5px solid;
+
+  .about-text {
+    p {
+      margin: 1rem 0;
+    }
+  }
+}
+
+.about-container {
+  @include flex-row;
+
+  img {
+    object-fit: contain;
+    width: 30%;
+  }
+}
+
+.timeline-item {
+  color: $background;
+  background: $secondary;
+  border-left: 5px solid $accent;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.imageFlex {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  .image {
+    flex-grow: 1;
+    align-self: flex-end;
+  }
+}

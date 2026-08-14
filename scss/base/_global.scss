@@ -1,0 +1,30 @@
+@import 'variables';
+@import 'mixins';
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap');
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  @include flex-column;
+  font-family: 'Bitter', serif;
+  font-size: 20px;
+  color: $primary;
+  background-color: $background;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-family: 'Young Serif';
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+a {
+  text-decoration: none;
+}
