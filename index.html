@@ -4,9 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="./css/index.css">
-
+    <title>Allyssa Preece | Software Developer</title>
+    <meta name="description"
+        content="Software developer specializing in web development, energy trading systems, and full-stack applications. Explore my projects built with React, Ember.js, Python, and more.">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="./scss/main.css">
+    <script src="./main.js" defer></script>
+</head>
 
 <body>
 
@@ -17,26 +21,171 @@
             <nav>
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <!-- <li><a href="./pages/about.html">About</a></li> -->
-                    <li><a href="./pages/projects.html">Projects</a></li>
-                    <li><a href="./pages/contact.html">Contact</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
+    <section id="home" class="hero glow-container">
         <img src="./images/doodle.png" class="doodle">
         <div class="hero-content">
             <h1>Hi, I'm Allyssa Preece!</h1>
-            <p>I'm a passionate software developer with a strong background in web development, data analysis, and energy trading systems. I thrive in building efficient, scalable applications that solve real-world problems. With a diverse skill set ranging from front-end frameworks like Ember.js and React to backend languages like Python and Java, I’m dedicated to crafting seamless, user-friendly experiences.
-
-            Whether it’s developing energy trading platforms, integrating complex systems, or contributing to open-source projects, I enjoy tackling challenges with a blend of creativity and technical precision.</p>
-            <a href="./pages/projects.html" class="button">Explore My Work</a>
+            <p>I'm a full-stack software developer with expertise in building scalable web applications and energy
+                trading systems. I specialize in creating seamless,
+                user-friendly experiences using modern frameworks and best practices. With hands-on experience in
+                Python, Java, JavaScript, and Ember.js,
+                I combine technical precision with creative problem-solving.</p>
+            <a href="#projects" class="button">Explore My Work</a>
         </div>
     </section>
 
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="content-container">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <ul>
+                        <li>Ember.js</li>
+                        <li>HTML5 & CSS3</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Backend</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Other</h3>
+                    <ul>
+                        <li>Agile Methodologies</li>
+                        <li>Data Analysis</li>
+                        <li>Git & Version Control</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about content-container">
+        <div class="content-container">
+            <h1>About Me</h1>
+            <div class="about-container">
+                <div class="about-text">
+                    <p>I have over two years of experience in software development, most notably in the energy trading
+                        and
+                        risk
+                        management sector, where I worked at Egistix to develop and maintain web applications that
+                        optimize
+                        trading
+                        operations. My technical stack includes Python, JavaScript, Ember.js, React, Java, and more,
+                        allowing me to be
+                        versatile across both front-end and back-end development.</p>
+
+                    <p>Before diving into software, I earned a BSc. in Geology, which honed my analytical skills and
+                        taught
+                        me to
+                        approach problems with a data-driven mindset. This unique combination of skills positions me to
+                        work
+                        across a
+                        variety of industries, from software development to GIS analysis.</p>
+
+                    <p>I’m also experienced in working within agile environments, collaborating closely with
+                        cross-functional teams,
+                        and adapting quickly to new tools and methodologies. With a strong commitment to continuous
+                        learning, I’m
+                        always seeking out new technologies and projects to further enhance my expertise.</p>
+                </div>
+                <img src="./images/plant shelf.png">
+
+            </div>
+            <div class="education">
+                <h2>Education</h2>
+                <div class="timleline">
+                    <div class="timeline-item">
+                        <h3>Athabasca University</h3>
+                        <p>BSc in Computing Information Systems</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3>Mount Royal University</h3>
+                        <p>BSc in Geology</p>
+                    </div>
+                </div>
+            </div>
+
+
+    </section>
+    <!-- Projects Section -->
+    <section id="projects" class="projects content-container">
+
+        <h1>Featured Projects</h1>
+
+        <div class="card-container">
+            <!-- Example Project Card -->
+            <div class="project-card left">
+                <img src="../images/fotomatic.png" alt="Fotomatic">
+                <div class="info">
+                    <h2>Fotomatic</h2>
+                    <div class='technologies'>
+                        <h3 class="technology">HTML</h3>
+                        <h3 class="technology">CSS</h3>
+                    </div>
+                    <p>Restored and optimized responsive design from specification sheet, ensuring pixel-perfect
+                        implementation across all device sizes.</p>
+                    <a href="https://allypreece.github.io/photomatic/" class="button">See More</a>
+                </div>
+            </div>
+            <div class="project-card right">
+                <img src="../images/galactic-horizons.png" alt="Galactic Horizons">
+                <div class="info">
+                    <h2>Business Site</h2>
+                    <div class='technologies'>
+                        <h3 class="technology">HTML</h3>
+                        <h3 class="technology">CSS</h3>
+                    </div>
+                    <p>Built a complete business landing page from scratch using modern CSS flexbox layouts and
+                        responsive design principles.</p>
+                    <a href="https://allypreece.github.io/galactic-horizons/" class="button">See More</a>
+                </div>
+            </div>
+            <div class="project-card left">
+                <img src="../images/tea-cozy.png" alt="Tea Cozy">
+                <div class="info">
+                    <h2>Tea Cozy</h2>
+                    <div class='technologies'>
+                        <h3 class="technology">HTML</h3>
+                        <h3 class="technology">CSS</h3>
+                    </div>
+                    <p>Debugged and corrected page layout and alignment issues using CSS Grid and flexbox best
+                        practices.</p>
+                    <a href="https://allypreece.github.io/tea-cozy/" class="button">See More</a>
+                </div>
+            </div>
+            <div class="project-card right">
+                <img src="../images/number-guesser.png" alt="Number Game">
+                <div class="info">
+                    <h2>Number Guesser</h2>
+                    <div class='technologies'>
+                        <h3 class="technology">CSS</h3>
+                        <h3 class="technology">JavaScript</h3>
+                    </div>
+                    <p>Implemented interactive game logic with JavaScript, including state management and dynamic
+                        styling.</p>
+                    <a href="https://allypreece.github.io/number-guesser/" class="button">See More</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer>
@@ -46,7 +195,6 @@
                     src="./images/linkedin.png"></a>
             <a class='method' href="https://github.com/allyPreece"><img src="./images/github-mark-white.png"> </a>
         </div>
-        <p>&copy 2024 Allyssa Preece</p>
     </footer>
 </body>
 

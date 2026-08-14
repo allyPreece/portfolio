@@ -1,0 +1,21 @@
+.hero {
+  min-height: 100vh;
+  @include flex-center;
+  color: $background;
+
+  .hero-content {
+    @include flex-column;
+    align-items: center;
+
+    p {
+      font-size: 1.1rem;
+      max-width: 600px;
+      line-height: 1.8;
+    }
+  }
+
+  .doodle {
+    margin: 2rem;
+    height: 20rem;
+  }
+}
